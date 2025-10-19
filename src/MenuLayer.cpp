@@ -33,7 +33,7 @@ class $modify(MyMenuLayer, MenuLayer) {
             "Google+ got deprecated in 2019 and is no longer avaible! (*bruh*)",
             "OK"
         )->show();
-
+        
         web::openLinkInBrowser("https://plus.google.com/+geometrydash");
     }
 };
