@@ -6,11 +6,11 @@
 		"mac": "2.2074",
 		"ios": "2.2074"
 	},
-	"id": "yootrickframe.myfirstmod",
-	"name": "MyFirstMod",
+	"id": "yootrickframe.googleplusbutton",
+	"name": "Google+ Button",
 	"version": "v1.0.0",
 	"developer": "YooTrickFrame",
-	"description": "Test",
+	"description": "Brings back the Google+ Button!",
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
 	}
