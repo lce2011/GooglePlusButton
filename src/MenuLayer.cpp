@@ -1,4 +1,6 @@
 #include <Geode/modify/MenuLayer.hpp>
+#include <Geode/utils/web.hpp>
+#include <Geode/utils/ColorProvider.hpp>
 
 using namespace geode::prelude;
 
@@ -7,13 +9,7 @@ class $modify(MyMenuLayer, MenuLayer) {
         if (!MenuLayer::init())
             return false;
 
-        auto label = CCLabelBMFont::create("2.2", "goldFont.fnt");
-        label->setPosition(520.0f, 300.0f);
-        label->setScale(1.500f);
-        label->setRotation(20.0f);
-        this->addChild(label);
-
-        if (auto node = this->getChildByIDRecursive("social-media-menu")) {
+        if (auto node = this->getChildByIDRecursive("profile-menu")) {
             auto spr = CCSprite::createWithSpriteFrameName("GJ_gpBtn_001.png"); // Google+ Icon
 
             auto btn = CCMenuItemSpriteExtra::create(
@@ -23,9 +19,9 @@ class $modify(MyMenuLayer, MenuLayer) {
 
             node->addChild(btn);
 
-            btn->m_baseScale = 0.700f;
+            btn->m_baseScale = 1.000f;
             btn->setScale(btn->m_baseScale);
-            btn->setPosition(85, 80);
+            btn->setPosition(82.500f, 25.000f);
         }
 
         return true;
@@ -34,8 +30,10 @@ class $modify(MyMenuLayer, MenuLayer) {
     void onClick(CCObject *) {
         FLAlertLayer::create(
             "Google+",
-            "Google+ was brutally murdered and is no longer available!",
+            "Google+ got deprecated in 2019 and is no longer avaible! (*bruh*)",
             "OK"
         )->show();
+
+        web::openLinkInBrowser("https://plus.google.com/+geometrydash");
     }
 };
