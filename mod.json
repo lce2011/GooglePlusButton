@@ -13,5 +13,13 @@
 	"description": "Brings back the Google+ Button!",
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
+	},
+	"tags": [
+		"interface",
+		"joke",
+		"offline"
+	],
+	"links": {
+		"source": "https://github.com/lce2011/GooglePlusButton"
 	}
 }
