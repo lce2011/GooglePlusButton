@@ -8,7 +8,7 @@ class $modify(GPBtnLayer, MenuLayer) {
         if (!MenuLayer::init())
             return false;
 
-        if (auto node = this->getChildByIDRecursive("profile-menu")) {
+        if (auto node = this->getChildByIDRecursive("bottom-menu")) {
             auto spr = CCSprite::createWithSpriteFrameName("GJ_gpBtn_001.png"); // Google+ Icon
 
             auto btn = CCMenuItemSpriteExtra::create(
@@ -20,7 +20,7 @@ class $modify(GPBtnLayer, MenuLayer) {
 
             btn->m_baseScale = 1.000f;
             btn->setScale(btn->m_baseScale);
-            btn->setPosition(82.500f, 25.000f);
+            btn->setPosition(340.500f, 32.500f);
         }
 
         return true;
@@ -29,7 +29,7 @@ class $modify(GPBtnLayer, MenuLayer) {
     void onClick(CCObject *) {
         FLAlertLayer::create(
             "Google+",
-            "Google+ got deprecated in 2019 and is no longer avaible! (*bruh*)",
+            "<cy>Google+</c> got <cr>deprecated</c> in 2019 and is <cr>no longer avaible!</c>",
             "OK"
         )->show();
     }
