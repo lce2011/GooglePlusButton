@@ -1,14 +1,14 @@
 {
-	"geode": "4.9.0",
+	"geode": "5.0.0-beta.3",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
 	},
 	"id": "yootrickframe.googleplusbutton",
 	"name": "Google+ Button",
-	"version": "v1.0.1",
+	"version": "v1.2.0",
 	"developer": "YooTrickFrame",
 	"description": "Brings back the Google+ Button!",
 	"dependencies": {
