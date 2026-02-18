@@ -6,4 +6,5 @@ Google+ Button is a mod which brings back the Google+ button.
 This means the mod is actually pretty useless, because Google+ got deprecated in 2019.
 
 # How to use
-Click the Google+ Button next to your profile in the main menu.
+
+Click the Google+ Button on the main menu.
