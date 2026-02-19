@@ -1,5 +1,6 @@
 #include <Geode/modify/MenuLayer.hpp>
 #include <Geode/utils/ColorProvider.hpp>
+#include <Geode/utils/web.hpp>
 
 using namespace geode::prelude;
 
@@ -15,12 +16,13 @@ class $modify(GPBtnLayer, MenuLayer) {
                 spr,
                 this,
                 menu_selector(GPBtnLayer::onClick));
-
-            node->addChild(btn);
-
+            
+            btn->setID("gpgp-bt"_spr);
             btn->m_baseScale = 1.000f;
             btn->setScale(btn->m_baseScale);
-            btn->setPosition(340.500f, 32.500f);
+            
+            node->addChild(btn);
+            node->updateLayout();
         }
 
         return true;
@@ -32,5 +34,7 @@ class $modify(GPBtnLayer, MenuLayer) {
             "<cy>Google+</c> got <cr>deprecated</c> in 2019 and is <cr>no longer avaible!</c>",
             "OK"
         )->show();
+        
+        web::openLinkInBrowser("https://plus.google.com/+geometrydash");
     }
 };
