@@ -1,3 +1,9 @@
+# 1.3.0
+- Added two settings for the mod
+- Added SignIn/SignOut button
+- Added Google+ Games button as alternate sprite
+- Bug fixes
+
 # 1.2.1
 - Fixed UI Button position
 - Readded and fixed openLinkInBrowser() code

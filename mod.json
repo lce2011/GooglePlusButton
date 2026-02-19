@@ -8,7 +8,7 @@
 	},
 	"id": "yootrickframe.googleplusbutton",
 	"name": "Google+ Button",
-	"version": "v1.2.1",
+	"version": "v1.3.0",
 	"developer": "YooTrickFrame",
 	"description": "Brings back the Google+ Button!",
 	"dependencies": {
@@ -21,5 +21,24 @@
 	],
 	"links": {
 		"source": "https://github.com/lce2011/GooglePlusButton"
+	},
+	"settings": {
+	    "gp-btn-title": {
+	        "type": "title",
+	        "name": "Google+ Button Settings",
+	        "description": "These are the settings for the UI Buttons."
+	    },
+	    "gpg-setting": {
+	        "type": "bool",
+	        "name": "Google+ Games Button",
+	        "description": "Uses the Google+ Games button instead of the normal Google+ button.",
+	        "default": false
+	    },
+	    "gp-signOut-setting": {
+	        "type": "bool",
+	        "name": "Google+ Sign Out Button",
+	        "description": "Uses the Google+ Sign Out Button instead of the Sign In button.",
+	        "default": false
+	    }
 	}
 }
