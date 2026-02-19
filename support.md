@@ -1,1 +1,0 @@
-Create an issue on the [GitHub Page](https://github.com/lce2011/GogglePlusButton)

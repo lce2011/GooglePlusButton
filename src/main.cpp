@@ -1,5 +1,4 @@
 #include <Geode/modify/MenuLayer.hpp>
-#include <Geode/utils/ColorProvider.hpp>
 #include <Geode/utils/web.hpp>
 
 using namespace geode::prelude;
@@ -17,7 +16,7 @@ class $modify(GPBtnLayer, MenuLayer) {
                 this,
                 menu_selector(GPBtnLayer::onClick));
             
-            btn->setID("gpgp-bt"_spr);
+            btn->setID("gp-btn"_spr);
             btn->m_baseScale = 1.000f;
             btn->setScale(btn->m_baseScale);
             
