@@ -19,61 +19,61 @@ class $modify(GPBtnLayer, MenuLayer) {
     
 
         // "bottom-menu" => Google+ | Google+ Games
-        if (auto node = this->getChildByIDRecursive("bottom-menu")) {
-            if (isGPGBtn) {
-                auto gpBtn = CCMenuItemSpriteExtra::create(
-                    gpgSpr,
-                    this,
-                    menu_selector(GPBtnLayer::onGPClick));
+        auto bottomMenu = this->getChildByIDRecursive("bottom-menu");
+        
+        if (isGPGBtn) {
+            auto gpBtn = CCMenuItemSpriteExtra::create(
+                gpgSpr,
+                this,
+                menu_selector(GPBtnLayer::onGPClick));
                 
-                gpBtn->setID("gp-btn"_spr);
-                gpBtn->m_baseScale = 1.0f;
-                gpBtn->setScale(gpBtn->m_baseScale);
+            gpBtn->setID("gp-btn"_spr);
+            gpBtn->m_baseScale = 1.0f;
+            gpBtn->setScale(gpBtn->m_baseScale);
             
-                node->addChild(gpBtn);
-                node->updateLayout();
-            } else {
-                auto gpBtn = CCMenuItemSpriteExtra::create(
-                    gpSpr,
-                    this,
-                    menu_selector(GPBtnLayer::onGPClick));
+            bottomMenu->addChild(gpBtn);
+            bottomMenu->updateLayout();
+        } else {
+            auto gpBtn = CCMenuItemSpriteExtra::create(
+                gpSpr,
+                this,
+                menu_selector(GPBtnLayer::onGPClick));
                     
-                gpBtn->setID("gp-btn"_spr);
-                gpBtn->m_baseScale = 1.0f;
-                gpBtn->setScale(gpBtn->m_baseScale);
+            gpBtn->setID("gp-btn"_spr);
+            gpBtn->m_baseScale = 1.0f;
+            gpBtn->setScale(gpBtn->m_baseScale);
             
-                node->addChild(gpBtn);
-                node->updateLayout();
-            }
+            bottomMenu->addChild(gpBtn);
+            bottomMenu->updateLayout();
         }
         
         // "profile-menu" => Google+ SignIn | Google+ SignOut
-        if (auto node = this->getChildByIDRecursive("profile-menu")) {
-            if (isGPSignOutBtn) {
-                auto gpSignBtn = CCMenuItemSpriteExtra::create(
-                    gpSignOutSpr,
-                    this,
-                    menu_selector(GPBtnLayer::onGPSignClick));
+        auto profileMenu = this->getChildByIDRecursive("profile-menu");
+        
+        if (isGPSignOutBtn) {
+            auto gpSignBtn = CCMenuItemSpriteExtra::create(
+                gpSignOutSpr,
+                this,
+                menu_selector(GPBtnLayer::onGPSignClick));
                     
-                gpSignBtn->setID("gp-sign-btn"_spr);
-                gpSignBtn->m_baseScale = 1.0f;
-                gpSignBtn->setScale(gpSignBtn->m_baseScale);
+            gpSignBtn->setID("gp-sign-btn"_spr);
+            gpSignBtn->m_baseScale = 1.0f;
+            gpSignBtn->setScale(gpSignBtn->m_baseScale);
             
-                node->addChild(gpSignBtn);
-                node->updateLayout();
-            } else {
-                auto gpSignBtn = CCMenuItemSpriteExtra::create(
-                    gpSignInSpr,
-                    this,
-                    menu_selector(GPBtnLayer::onGPSignClick));
+            profileMenu->addChild(gpSignBtn);
+            profileMenu->updateLayout();
+        } else {
+            auto gpSignBtn = CCMenuItemSpriteExtra::create(
+                gpSignInSpr,
+                this,
+                menu_selector(GPBtnLayer::onGPSignClick));
                     
-                gpSignBtn->setID("gp-sign-btn"_spr);
-                gpSignBtn->m_baseScale = 1.0f;
-                gpSignBtn->setScale(gpSignBtn->m_baseScale);
+            gpSignBtn->setID("gp-sign-btn"_spr);
+            gpSignBtn->m_baseScale = 1.0f;
+            gpSignBtn->setScale(gpSignBtn->m_baseScale);
             
-                node->addChild(gpSignBtn);
-                node->updateLayout();
-            }
+            profileMenu->addChild(gpSignBtn);
+            profileMenu->updateLayout();
         }
 
         return true;
