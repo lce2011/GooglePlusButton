@@ -1,3 +1,4 @@
+// GooglePlusButton Main Entry File
 #include <Geode/modify/MenuLayer.hpp>
 #include <Geode/loader/Mod.hpp>
 #include <Geode/utils/web.hpp>
