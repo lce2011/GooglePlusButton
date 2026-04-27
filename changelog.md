@@ -1,3 +1,6 @@
+# 1.3.1
+- Updated to Geode 5.6.1
+
 # 1.3.0
 - Added two settings for the mod
 - Added SignIn/SignOut button
